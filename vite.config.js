@@ -5,7 +5,7 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   plugins: [vue()],
   // 添加 base 配置，设置为根路径
-  base: "/ziwei-pub/",
+  base: "/ziwei-pub",
   // 如果需要，也可以配置构建输出目录
   build: {
     outDir: "dist",
