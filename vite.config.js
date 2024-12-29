@@ -1,31 +1,24 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
-const host = process.env.TAURI_DEV_HOST;
-
 // https://vitejs.dev/config/
-export default defineConfig(async () => ({
+export default defineConfig({
   plugins: [vue()],
-
-  // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
-  //
-  // 1. prevent vite from obscuring rust errors
-  clearScreen: false,
-  // 2. tauri expects a fixed port, fail if that port is not available
-  server: {
-    port: 1420,
-    strictPort: true,
-    host: host || false,
-    hmr: host
-      ? {
-          protocol: "ws",
-          host,
-          port: 1421,
-        }
-      : undefined,
-    watch: {
-      // 3. tell vite to ignore watching `src-tauri`
-      ignored: ["**/src-tauri/**"],
-    },
-  },
-}));
+  // 添加 base 配置，设置为根路径
+  base: "/",
+  // 如果需要，也可以配置构建输出目录
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    // 确保资源路径正确
+    assetsInlineLimit: 4096,
+    // 生成静态资源的存放路径
+    rollupOptions: {
+      output: {
+        chunkFileNames: "assets/js/[name]-[hash].js",
+        entryFileNames: "assets/js/[name]-[hash].js",
+        assetFileNames: "assets/[ext]/[name]-[hash].[ext]"
+      }
+    }
+  }
+});
