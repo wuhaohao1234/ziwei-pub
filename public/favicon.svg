@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="256" cy="256" r="256" fill="#4F46E5"/>
+  
+  <!-- 外环装饰 -->
+  <circle cx="256" cy="256" r="240" stroke="white" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- 八卦图案装饰 -->
+  <path d="M256 32C378.5 32 478 131.5 478 254C478 376.5 378.5 476 256 476" stroke="white" stroke-width="4"/>
+  <path d="M256 32C133.5 32 34 131.5 34 254C34 376.5 133.5 476 256 476" stroke="white" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- 中心星星 -->
+  <path d="M256 128L284 238H398L306 308L334 418L256 348L178 418L206 308L114 238H228L256 128Z" fill="white"/>
+  
+  <!-- 装饰性小星星 -->
+  <circle cx="128" cy="128" r="8" fill="white"/>
+  <circle cx="384" cy="128" r="8" fill="white"/>
+  <circle cx="128" cy="384" r="8" fill="white"/>
+  <circle cx="384" cy="384" r="8" fill="white"/>
+</svg> 
