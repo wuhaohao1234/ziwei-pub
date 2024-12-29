@@ -1,7 +1,8 @@
 
 # 紫微斗数 - 探索东方古老的智慧
 
-主页：https://wuhaohao1234.github.io/ziwei-pub/#/
+<!-- ![主页](public/2024-12-29-17-47-05.png) -->
+[主页](https://wuhaohao1234.github.io/ziwei-pub/#/)
 
 ## 项目介绍
 
@@ -117,8 +118,8 @@ pnpm ios:build
 
 ## 联系方式
 
-- 项目主页：[GitHub](https://github.com/yourusername/ziwei-pub)
-- 问题反馈：[Issues](https://github.com/yourusername/ziwei-pub/issues)
+- 项目主页：[GitHub](https://github.com/wuhaohao1234/ziwei-pub)
+- 问题反馈：[Issues](https://github.com/wuhaohao1234/ziwei-pub/issues)
 
 ## 致谢
 
